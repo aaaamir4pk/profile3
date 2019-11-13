@@ -1,0 +1,390 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family: 'Roboto Slab', serif;
+}
+body{
+	overflow-x:hidden;
+}
+
+.container{
+	width:99.8%;
+	height:2867px;
+	border:1px solid black;
+	position:relative;
+}
+
+.nav-bar{
+	width: 100%;
+	height:80px;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 1;
+}
+
+.left-bar{
+	background-image: url(./images/logo.png);
+	width:300px;
+	height:90px;
+	top:0px;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.right-bar{
+	width:50%;
+	
+}
+
+.right-bar ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	top:20px;
+	position: relative;
+
+}
+
+.right-bar ul li{
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.right-bar ul li:nth-child(1){
+}
+
+.right-bar ul li a{
+	color:black;
+}
+
+.right-bar ul li a:hover{
+	color:#afc4a7;
+}
+
+
+.right-bar ul li:hover{
+	color:#afc4a7;
+	transform: translateY(5px);
+	transition-duration: .5s;
+}
+
+.home-bck-1{
+	width:652px;
+	height:700px;
+	background: #ccdbc6;
+	top: 90px;
+	right:20px;
+	position: absolute;
+}
+
+.home-img-1{
+	background-image: url(./images/home1.jpg);
+	width:900px;
+	height:570px;
+	top:150px;
+	border:10px solid white;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.home-bck-2{
+	width:500px;
+	height:450px;
+	background: #e6e6e6;
+	border:10px solid white;
+	top: 210px;
+	right:120px;
+	position: absolute;
+}
+
+.home-bck-2 h1{
+	font-family: 'Staatliches', cursive;
+	font-size:65px;
+	color:#7c7c7c;
+	top:60px;
+	left:30px;
+	position: relative;
+}
+
+.home-bck-2 h1 span{
+	font-family: 'Staatliches', cursive;
+	color:#262626;
+}
+
+
+.h-s-icons ul{
+	width:50px;
+	right:0px;
+	top:250px;
+	position: fixed;
+	cursor: pointer;
+}
+
+.h-s-icons ul:hover{
+	transform: translateX(-20px);
+	transition-duration: 1s;
+}
+
+.h-s-icons ul li{
+	font-size: 20px;
+	margin-top:20px;
+	text-align: center;
+	position: relative;
+}
+
+.h-s-icons ul li:hover{
+	color:orange;
+}
+
+.chat-bar{
+	width:400px;
+	height:70px;
+	right:20px;
+	bottom:-10px;
+	background:#778372;
+	border-radius: 10px;
+	position: fixed;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.chat-bar p{
+	font-size: 15px;
+	color:white;
+	letter-spacing: 2px;
+	top:20px;
+	left:30px;
+	position: relative;
+}
+
+.chat-bar p span{
+	font-size: 20px;
+	top:5px;
+	left:230px;
+	padding: 0px 7px;
+	border-radius: 50%;
+	text-align: center;
+	background: #778372;
+	position: relative;
+}
+
+.chat-bar p span:hover{
+	background: #9dad97;
+}
+
+.o-s-bck-1{
+	width:675px;
+	height:600px;
+	background: #e6e6e6;
+	top: 240px;
+	left:0px;
+	position: relative;
+}
+
+.o-s-img-1{
+	background-image: url(./images/story1.jpg);
+	width:600px;
+	height:450px;
+	top:70px;
+	left:130px;
+	border:10px solid white;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.o-s-text-1{
+	width:400px;
+	left:800px;
+	top:-370px;
+	position: relative;
+}
+
+.o-s-text-1 p{
+	margin-top:30px;
+}
+
+.treatments .ts-text{
+	font-size: 40px;
+	color:#4f574c;
+	top:320px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.treatments .ts-news-bar{
+	width:1132px;
+	height:30px;
+	background: linear-gradient(lightgray, white, lightgray);
+	top:370px;
+	left:105px;
+	overflow: hidden;
+	position: relative;
+}
+
+.treatments .ts-news-bar p{
+	font-size: 15px;
+	top:4px;
+	left:1140px;
+	animation:ts-news-text 7s infinite;
+	animation-fill-mode: forwards;
+	white-space:nowrap;
+	position: relative;
+}
+
+@keyframes ts-news-text{
+	0%{transform:translatex(0px);}
+	20%{transform:translatex(-932px);}
+	80%{transform:translatex(-932px);}
+	85%{transform:translatex(-932px);}
+	90%{transform:translatex(-932px);}
+	100%{transform:translatex(-1900px);}
+	82%{opacity: 1;}
+	84%{opacity: 0;}
+	86%{opacity: 1;}
+	88%{opacity: 0;}
+	90%{opacity: 1;}
+}
+
+.treatments .ts-images{
+	position: relative;
+}
+
+.treatments .ts-slide-images{
+	width:1132px;
+	height:150px;
+	background-size: 100% 100%;
+	top:390px;
+	left:105px;
+	position: relative;
+	animation:ts-slide 15s infinite;
+}
+
+@keyframes ts-slide{
+	0%{background-image:url(./images/slide1.jpg)}
+	20%{background-image:url(./images/slide2.jpg)}
+	40%{background-image:url(./images/slide3.jpg)}
+	60%{background-image:url(./images/slide4.jpg)}
+	80%{background-image:url(./images/slide5.jpg)}
+	100%{background-image:url(./images/slide1.jpg)}
+}
+
+.treatments .ts-slide-images:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.treatments .ts-images img{
+	width:280px;
+	height:250px;
+	top:400px;
+	left:105px;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.treatments .ts-images img:nth-child(1)::after{
+	content:"vvork";
+	height:250px;
+	width:280px;
+	left:0;
+	top:-300px;
+	opacity: 0;
+	background: green;
+	position: relative;
+	display: inline-block;
+	border:1px solid red;
+	transition:all 1s;
+	text-align: center;
+	line-height: 280px;
+	color:white;
+	font-size:40px;
+}
+
+.treatments .ts-images img:nth-child(1):hover::after{
+	top:0;
+	opacity: 0.5;
+	transition-duration: 1s;
+}
+
+.contact-us{
+	width:100%;
+	height:500px;
+	background:rgb(95, 95, 95);
+	color:white;
+	top:720px;
+	position: relative;
+}
+
+.contact-us > .c-u-text{
+	top:30px;
+	font-size:50px;
+	font-weight:bold;
+	text-align: center;
+	position: relative;
+}
+
+.contact-us > .c-u-icon1 > ul > li{
+	top:0px;
+	margin-left:170px;
+	margin-top: 20px;
+	list-style: none;
+}
+
+.contact-us > .c-u-icon1 > ul > li > i{
+	font-size: 25px;
+	left:-40px;
+	bottom: -25px;
+	position: relative;
+}
+
+.contact-us > .c-u-icon1 > ul > li > h5{
+	font-size: 20px;
+	position: relative;
+}
+
+.contact-us > .c-u-icon2 > ul > li{
+	top:-140px;
+	right:-1000px;
+	margin-left: 10px;
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.contact-us > .c-u-icon2 > ul > li:hover{
+	color: orange;
+	transform: scale(1.1);
+	transition-duration: .5s;
+}
+
+.contact-us > .c-u-icon2 > ul > li > i{
+	font-size: 40px;
+	position: relative;
+}
+
+.contact-us > .c-u-f-text{
+	width:60%;
+	left:270px;
+	font-size:30px;
+	text-align: center;
+	position: relative;
+}
+
+.contact-us > .c-u-f-text > p > span:nth-child(1){
+	color:orange;
+}
+
+.contact-us > .c-u-f-text > p > span:nth-child(2){
+	color:orange;
+}
+
+.contact-us > .c-u-f-text > p > span:nth-child(3){
+	color:red;
+}
